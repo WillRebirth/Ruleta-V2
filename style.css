@@ -79,6 +79,28 @@ body{
     font-weight: 500;
 }
 
+.leyenda {
+    width: 2px;
+    height: 30px; /* Ajusta la altura según sea necesario */
+    background-color: #333;
+    transform-origin: bottom center;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) rotate(0deg);
+    transition: transform 0.5s ease; /* Agregamos transición para un efecto suave */
+}
+
+.leyenda:nth-child(even) {
+    height: 30px; /* Ajusta la altura según sea necesario */
+    transform: translateX(-50%) rotate(20deg);
+}
+
+.leyenda:nth-child(3) {
+    height: 30px; /* Ajusta la altura según sea necesario */
+    transform: translateX(-50%) rotate(40deg);
+}
+
 @media screen and (max-width:768px ){
     .wrapper{
         font-size: 12px;
